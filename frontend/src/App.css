@@ -1,0 +1,243 @@
+/* General application styles */
+.app {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.buddy-module-container {
+  display: flex;
+  width: 100%;
+}
+
+.buddy-module-menu {
+  width: 25%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-right: 2px solid #ddd;
+}
+
+.buddy-module-menu h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.buddy-module-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.buddy-module-menu ul li {
+  padding: 15px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.buddy-module-menu ul li:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.buddy-module-options {
+  width: 75%;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Button styles */
+.option-button {
+  padding: 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.option-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Extracted text and transcribed text containers */
+.extracted-text,
+.transcribed-text {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.extracted-text h4,
+.transcribed-text h4 {
+  margin-top: 0;
+  color: #333;
+}
+
+.extracted-text p,
+.transcribed-text p {
+  margin: 0;
+  color: #555;
+}
+
+/* Button styles for functional screens */
+.back-button,
+.read-aloud-button,
+.stop-button,
+.share-button,
+.edit-button,
+.save-txt-button,
+.save-pdf-button {
+  padding: 12px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.read-aloud-button {
+  background-color: #ffc107;
+  color: white;
+}
+
+.read-aloud-button:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+.stop-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.stop-button:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+/* Styles for specific screens */
+.functional-screen,
+.tts-screen,
+.interactive-screen {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tts-screen textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced styles for Interactive Document Interaction screen */
+.interactive-screen {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.interactive-screen .extracted-text {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.interactive-screen .extracted-text h4 {
+  margin-top: 0;
+  color: #333;
+}
+
+.interactive-screen .extracted-text p {
+  margin: 0;
+  color: #555;
+}
+
+.interactive-screen button {
+  padding: 12px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.interactive-screen .share-button {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.interactive-screen .share-button:hover {
+  background-color: #138496;
+  transform: scale(1.05);
+}
+
+.interactive-screen .edit-button {
+  background-color: #ffc107;
+  color: white;
+}
+
+.interactive-screen .edit-button:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+.interactive-screen .save-txt-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.interactive-screen .save-txt-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.interactive-screen .save-pdf-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.interactive-screen .save-pdf-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
